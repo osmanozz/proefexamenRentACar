@@ -12,6 +12,8 @@ create table klant (
     klant_naam varchar(255) NOT NULL,
     telefoonnummer varchar(255) NOT NULL,
     email varchar(255) NOT NULL,
+    username varchar(255) NOT NULL UNIQUE,
+    password varchar(255),
     primary key (klant_id)
 );
 create table reservering (
